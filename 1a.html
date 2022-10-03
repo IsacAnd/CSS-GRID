@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            height: 300px;
+            width: 500px;
+            grid-column-gap: 1px;
+            grid-row-gap: 1px;
+        }
+        .grid-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+            
+        }
+        div#item-h{
+            grid-column-start: 2;
+            grid-row-start: 1;
+        }
+        div#item-c{
+            grid-column-start: 1;
+            grid-row-start: 1;
+        }
+        div#item-g{
+            grid-column-start: 3;
+            grid-row-start: 2;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        1 - a) 
+    </h1>
+    <div class="grid-container">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item" id="item-c">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item" id="item-f">F</div>
+        <div class="grid-item" id="item-g">G</div>
+        <div class="grid-item" id="item-h">H</div>
+    </div>
+</html>
